@@ -83,3 +83,19 @@ X =  np.concatenate(([XI, Xdummies]), axis=1)
 encoder = LabelEncoder()
 encoder.fit(y)
 y = encoder.transform(y)
+
+###### Scaling data
+sc = StandardScaler()
+sc.fit(X)            # Scaling X
+X = sc.transform(X)  #
+#sc.fit(X_train)
+#sc.fit(X_test)
+#X_train = sc.transform(X_train)
+#X_test = sc.transform(X_test)
+
+
+##### Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = 0.7, random_state = 0)
+
+
