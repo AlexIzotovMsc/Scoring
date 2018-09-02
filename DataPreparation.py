@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv("C:\PyScripts\PyData\Data2.txt")
+df = pd.read_csv("Data2.txt")
 print(df.head(5))
 
 y = df.iloc[:, 13].values
