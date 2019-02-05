@@ -1,2 +1,2 @@
-# Scoring
+# Interview tasks
 
